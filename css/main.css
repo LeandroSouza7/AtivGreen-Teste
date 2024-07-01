@@ -1,0 +1,138 @@
+body{
+    overflow-x: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.disabled{
+    display: none;
+}
+
+.btns-paginacao .btnAtivo{
+    border: 2px solid blue;
+}
+
+.opacity-votacao img{
+    opacity: 0.5;
+}
+
+.opacity-votacao .imgEscolhida{
+    opacity: 1;
+    border: 2px solid blue;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.frase-inicial{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.segunda-frase{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.espacial{
+    margin-top: -25px;
+}
+
+.img-capa{
+    background-image: url(../imgs/img_capa.jpg);
+    border-radius: 20px;
+    height: 382px;
+}
+
+.capa-texto{
+    padding: 20px;
+    color: white;
+}
+
+.texto-img-favorita{
+    text-align: center;
+}
+
+.texto-img-favorita p{
+    margin: 35px 0;
+}
+
+.texto-pgn{
+    text-align: center;
+}
+
+.btns-paginacao{
+    text-align: center;
+}
+
+.btns-paginacao button{
+    background-color: #eee;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.btn-voto{
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0px 0px 0px #888, 0px 0 5px #888;
+}
+
+.btnVotar:enabled{
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.btnVotar:disabled{
+    background-color: gray;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 16px;
+    width: 250px;
+    cursor:initial;
+}
+
+@media screen and (max-width: 960px){
+    body{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .fotos{
+        text-align: center;
+    }
+}
+
+
